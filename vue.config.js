@@ -1,10 +1,10 @@
 module.exports = {
   pwa: {
     name: 'ScriptKev',
-    themeColor: '#7ED321',
-    msTileColor: '#7ED321',
+    themeColor: '#dbdbdb',
+    msTileColor: '#dbdbdb',
     manifestOptions: {
-      background_color: '#7ED321'
+      background_color: '#dbdbdb'
     }
   }
 }
