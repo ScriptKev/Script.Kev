@@ -1,0 +1,5 @@
+// Components
+.neu {
+    background-color: transparent;
+    box-shadow: map-get($Neumorfismo, 'Shadows1' ), map-get($Neumorfismo, 'Shadows2' );
+}

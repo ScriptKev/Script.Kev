@@ -1,0 +1,24 @@
+button, .btn, .btnPrimary {
+    display: inline-block;
+    line-height: 2.2;
+    background-color: map-get($Color, 'BtnPrimary' );
+    color: map-get($Color, 'BtnPrimaryText');
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    width: 120px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: map-get($Neumorfismo, 'Shadows1' ), map-get($Neumorfismo, 'Shadows2' );
+    color: map-get($Neumorfismo, 'TextPrimary' );
+    transition: 1s ease-out;
+    font-family: 'Poppins';
+}
+
+button {
+    background-position: -200px -70px;
+}
