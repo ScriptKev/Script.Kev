@@ -23,7 +23,7 @@
 
             <div class="widget__secondary--description">
                 <p>
-                    Precios accesibles
+                    Variedad de presupuestos accesibles y tentadores.
                 </p>
             </div>
         </article>
@@ -35,7 +35,7 @@
 
             <div class="widget__tertiary--description">
                 <p>
-                    1 semana para un sitio web optimizado, <br> moderno y elegante
+                    1 semana para un sitio web optimizado, <br> moderno y elegante.
                 </p>
             </div>
         </article>

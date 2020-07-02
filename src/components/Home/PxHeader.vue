@@ -19,9 +19,13 @@
 
                 <div class="scriptKev__description">
                     <p>
-                        Hola, soy Kevin Blanco, desarrollador web frontend y apasionado del diseño web.
-                        Quiero poder entender la web y crear cosas increíbles en ella.
+                        Hola, soy Kevin Blanco, desarrollador web frontend y apasionado de la tecnologia,
+                        y crear cosas increibles en la web.
                     </p>
+
+                    <br />
+
+                    <span> <i> "No se trata de saberlo todo, sino de <strong>Nunca para de Aprender 🚀</strong>" </i> </span>
                 </div>
 
                 <div class="scriptKev__stack">
