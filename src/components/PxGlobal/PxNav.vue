@@ -39,9 +39,9 @@ export default {
     data () {
         return {
             navLinks: [
-                { text: 'Home', route: '/' },
-                { text: 'Projects', route: '/projects' },
-                { text: 'Contact', route: '/proposal' },
+                { text: 'Inicio', route: '/' },
+                { text: 'Portafolio', route: '/portfolio' },
+                { text: 'Presupuesto', route: '/proposal' },
             ],
         }
     }
