@@ -10,6 +10,8 @@
 
 .Portfolio {
     height: auto;
+    max-width: 1440px;
+    margin: auto;
 }
 </style>
 
