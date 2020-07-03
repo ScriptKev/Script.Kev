@@ -1,7 +1,9 @@
 <template>
     <nav class="nav">
         <section class="nav__logo">
-            <h2 class="neuCard">ScriptKev</h2>
+            <router-link to="/">
+                <h2 class="neuCard">ScriptKev</h2>
+            </router-link>
         </section>
 
         <section class="nav__links">
@@ -23,6 +25,13 @@
     @extend .neu;
     height: 10vh;
     border-radius: 0 0 20px 20px;
+
+    &__logo {
+        & h2.neuCard  {
+            color: rgba(19, 19, 19, 0.712);
+            text-shadow: 1px 1px 5px rgba(15, 15, 15, 0.377);
+        }
+    }
 
     &__links {
 
