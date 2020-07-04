@@ -26,6 +26,13 @@
     height: 10vh;
     border-radius: 0 0 20px 20px;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    max-width: 1440px;
+    margin: auto;
+
     &__logo {
         & h2.neuCard  {
             color: rgba(19, 19, 19, 0.712);
@@ -50,7 +57,7 @@ export default {
             navLinks: [
                 { text: 'Inicio', route: '/' },
                 { text: 'Portafolio', route: '/portfolio' },
-                { text: 'Presupuesto', route: '/proposal' },
+                { text: 'Precios', route: '/prices' },
             ],
         }
     }

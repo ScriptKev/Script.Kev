@@ -1,5 +1,5 @@
 <template>
-    <div class="Proposal">
+    <div class="notFound">
         <h2>Pagina en Construccion</h2>
     </div>
 </template>
@@ -7,7 +7,7 @@
 <style lang="scss" scoped>
 @import '../assets/scss/main';
 
-.Proposal {
+.notFound {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,6 +19,6 @@
 
 <script>
 export default {
-    name: 'Proposal'
+    name: 'notFound'
 }
 </script>

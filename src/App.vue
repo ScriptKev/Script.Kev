@@ -1,6 +1,6 @@
 <template>
     <div class="App">
-        <transition name="fade" appear>
+        <!-- <transition name="fade" appear>
             <div class="modal-overlay" v-if="showModal" @click="showModal = false"></div>
         </transition>
 
@@ -15,7 +15,7 @@
                     cerrar
                 </button>
             </div>
-        </transition>
+        </transition> -->
 
         <px-nav />
         <router-view />

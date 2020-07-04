@@ -1,25 +1,11 @@
 <template>
-    <main class="mainPortfolio">
-        <section class="mainPortfolio__title">
-            <h2>Mis Proyectos</h2>
+    <main class="mainPrice">
+        <section class="mainPrice__title">
+            <h2>Crea tu Presupuesto</h2>
         </section>
 
-        <section class="mainPortfolio__projects">
-            <article class="project" v-for="(p, i) in projects" :key="i">
-                <a :href="p.sourceCode.link" target="_blank" rel="noopener noreferrer">
-                    <figure class="project__img">
-                        <img :src="p.snapshot" :alt="p.title" loading="lazy">
-                    </figure>
-
-                    <section class="project__about">
-                        <h3> {{ p.title }} </h3>
-
-                        <p v-for="(t, i) in p.tags" :key="i">
-                            {{ t }}
-                        </p>
-                    </section>
-                </a>
-            </article>
+        <section class="mainPrice__clientData">
+            <px-client-form />
         </section>
     </main>
 </template>
@@ -27,7 +13,7 @@
 <style lang="scss" scoped>
 @import '../../assets/scss/main';
 
-.mainPortfolio {
+.mainPrice {
     height: auto;
     width: 100%;
     margin-top: 50px;
@@ -36,67 +22,26 @@
         text-align: center;
     }
 
-    &__projects {
-        padding: 0 50px;
+    &__clientData {
         max-width: 1440px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        row-gap: 20px;
-        column-gap: 20px;
-        margin-top: 60px;
-    }
-
-    & .project {
-        width: 400px;
-        height: 350px;
-            position: relative;
-
-        &__img {
-            height: 250px;
-            // background-image: url('../../static/iconProjects/lcpSnapshot.png');
-            // background-repeat: no-repeat;
-            // background-position: center;
-            // background-size: cover;
-            transition: 1s ease-out;
-
-            & img {
-                border-radius: 10px;
-                width: 100%;
-                height: inherit;
-                box-shadow: 1px 1px 15px rgba(26, 26, 26, 0.527);
-            }
-
-            &:hover {
-                transform: scale(0.9);
-            }
-        }
-
-        &__about {
-            position: absolute;
-            bottom: 20%;
-            width: 70%;
-            left: 15%;
-            margin: 0 auto 0 auto;
-            background-color: rgba(26, 26, 26, 0.349);
-            box-sizing: border-box;
-            text-align: center;
-            border-radius: 10px;
-            color: #ebebeb;
-            text-shadow: 1px 1px 10px black;
-            box-shadow: 1px 1px 10px rgba(26, 26, 26, 0.349);
-
-        }
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 </style>
 
 <script>
+import PxClientForm from './PxClientForm'
+
 export default {
-    name: 'PxMain',
+    name: 'PxPreciosMain',
+    components: { PxClientForm },
     data () {
         return {
+            totalPrice: Number,
+
             projects:[
                {
                     title: 'LCP',
@@ -163,6 +108,12 @@ export default {
                     sourceCode: false
                 },
             ],
+        }
+    },
+
+    methods: {
+        checkForm: () => {
+            console.log('hola')
         }
     }
 }

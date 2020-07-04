@@ -19,7 +19,7 @@
 
                 <div class="scriptKev__description">
                     <p>
-                        Hola, soy Kevin Blanco, desarrollador web frontend y apasionado de la tecnologia,
+                        Hola, soy Kevin Blanco, desarrollador web frontend, apasionado de la tecnologia,
                         y crear cosas increibles en la web.
                     </p>
 
@@ -35,7 +35,7 @@
                         v-for="i in stackLogos"
                         :key="i.name"
                         >
-                            <img :src="i.logo" :key="i.name" v-bind:alt="i.name" width="100%" height="100%">
+                            <img :src="i.logo" :key="i.name" v-bind:alt="i.name" width="100%" height="100%" loading="lazy">
                     </a>
                 </div>
                 <div class="scriptKev__phrase"></div>
@@ -148,13 +148,13 @@ export default {
                 { name: 'Adobe XD', logo: require('@/static/stackLogos/Adobe-XD.svg') },
                 { name: 'Figma', logo: require('@/static/stackLogos/Figma.jpg') },
                 { name: 'Framer', logo: require('@/static/stackLogos/Framer.svg') },
-                { name: 'GitHub', logo: require('@/static/stackLogos/GitHub.svg') },
                 { name: 'HTML', logo: require('@/static/stackLogos/HTML.svg') },
                 { name: 'CSS', logo: require('@/static/stackLogos/CSS.svg') },
                 { name: 'JavaScript', logo: require('@/static/stackLogos/JavaScript.svg') },
-                { name: 'Wordpress', logo: require('@/static/stackLogos/Wordpress.svg') },
                 { name: 'Sass', logo: require('@/static/stackLogos/Sass.png') },
+                { name: 'GitHub', logo: require('@/static/stackLogos/GitHub.svg') },
                 { name: 'PWA', logo: require('@/static/stackLogos/PWA.png') },
+                { name: 'Wordpress', logo: require('@/static/stackLogos/Wordpress.svg') },
                 { name: 'NPM', logo: require('@/static/stackLogos/NPM.svg') },
                 { name: 'Vue', logo: require('@/static/stackLogos/Vue.png') },
                 { name: 'Vuetify', logo: require('@/static/stackLogos/Vuetify.png') },

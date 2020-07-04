@@ -1,7 +1,7 @@
 <template>
     <section class="mainServices">
         <section class="mainServices__title">
-            <h2>Que puedo ofrecerte?</h2>
+            <h2>Que puedo ofrecerte? {{ scrollY }} </h2>
         </section>
 
             <section class="mainServices__one">
@@ -230,6 +230,8 @@
     }
 
 }
+
+// scroll Animation
 </style>
 
 <script>
