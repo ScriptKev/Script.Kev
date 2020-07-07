@@ -25,7 +25,6 @@
     @extend .neu;
     height: 10vh;
     border-radius: 0 0 20px 20px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,6 +36,7 @@
         & h2.neuCard  {
             color: rgba(19, 19, 19, 0.712);
             text-shadow: 1px 1px 5px rgba(15, 15, 15, 0.377);
+            margin: 0 20px;
         }
     }
 
@@ -44,6 +44,8 @@
 
         & .nav__link {
             margin: 0 10px;
+            color: rgba(17,17,17,.63);
+            font-weight: 500;
         }
     }
 }
@@ -57,7 +59,7 @@ export default {
             navLinks: [
                 { text: 'Inicio', route: '/' },
                 { text: 'Portafolio', route: '/portfolio' },
-                { text: 'Precios', route: '/prices' },
+                { text: 'Precios', route: '/pricing' },
             ],
         }
     }

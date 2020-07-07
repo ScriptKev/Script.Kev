@@ -1,164 +1,96 @@
 <template>
-    <main class="headerPortfolio">
-        <div class="headerPortfolio__container">
-            <div class="headerPortfolio__grid">
-                <section class="headerPortfolio__presentation">
-                    <h2>
-                        Te muestro un poco de mi trabajo
-                        <br>
-                        😀 🦾
-                        <br>
-                        <span class="typed__text"> {{ typeValue }} </span>
-                        <span class="typed__cursor" :class="{ 'typing': typeStatus }" >|</span>
-                    </h2>
-                </section>
+    <section class="cardsPrices">
+        <article class="cardPrices__standar">
+            <section class="cardPrices__standar--title">
+                <h3>Estandar</h3>
+            </section>
 
-                <section class="headerPortfolio__img--container"></section>
-            </div>
-        </div>
-    </main>
+            <ul class="cardPrices__standar--features">
+                <li>
+                    <v-icon color="blue">mdi-checkbox-marked-circle</v-icon>
+                    <span>Diseño Personalizado</span>
+                </li>
+
+                <li>
+                    <v-icon color="blue">mdi-checkbox-marked-circle</v-icon>
+                    <span>Animaciones</span>
+                </li>
+
+                <li>
+                    <v-icon color="blue">mdi-checkbox-marked-circle</v-icon>
+                    <span>3 Paginas internas</span>
+
+                </li>
+
+                <li>
+                    <v-icon color="blue">mdi-checkbox-marked-circle</v-icon>
+                    <span>Boton de contacto (Whatsapp)</span>
+                </li>
+
+                <li>
+                    <v-icon color="blue">mdi-checkbox-marked-circle</v-icon>
+                    <span>SEO (Basico)</span>
+                </li>
+
+                <li>
+                    <v-icon color="blue">mdi-checkbox-marked-circle</v-icon>
+                    <span>Dominio personalizado (.com, .shop, .io...)</span>
+                </li>
+
+                <li>
+                    <v-icon color="blue">mdi-checkbox-marked-circle</v-icon>
+                    <span>Certificado SSL</span>
+                </li>
+
+                <li>
+                    <hr>
+                    <span class="featuresPrice">$15</span>
+                </li>
+            </ul>
+        </article>
+    </section>
 </template>
 
 <style lang="scss" scoped>
 @import '../../assets/scss/main';
 
-.headerPortfolio {
-    // margin-top: 50px;
-    width: 100%;
-    height: 90vh;
+.cardsPrices {
+    height: auto;
+    max-width: 1440px;
+    margin: 50px auto 0 auto;
 
-    &__container {
-        max-width: 1440px;
-    }
-
-    &__grid {
-        display: grid;
-        height: 90vh;
-        width: 100%;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:    "presentacion img";
-        align-content: center;
-        justify-items: center;
-
-        & .headerPortfolio__presentation {
-            grid-area: presentacion;
-
-            & h2 {
-                font-size: 2.5rem;
-            }
-        }
-
-        & .headerPortfolio__img--container {
-            grid-area: img;
-        }
-    }
-
-    &__presentation {
-        height: 100%;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        justify-content: center;
-        align-items: center;
+    & .cardPrices__standar {
+        padding: 25px 0 0 0;
         text-align: center;
-    }
+        border-radius: 10px;
+        height: auto;
+        width: 40%;
+        margin: auto;
+        background-color: rgba(134, 134, 134, 0.1);
+        box-shadow: 10px 10px 6px 5px rgba(0, 0, 0, 0.28);
 
-    &__img--container {
-        height: 100%;
-        width: 100%;
-        background-image: url('../../static/pages.png');
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center;
-        filter: drop-shadow(1px 1px 10px rgba(51, 51, 51, 0.747))
-    }
+        &--features {
+            padding: 0;
+            font-weight: 500;
 
-}
-.typed__text{
-    color: rgba(251, 0, 0, 0.801);
-    text-shadow: 1px 1px 6px rgba(251, 0, 0, 0.486);
-}
+            li{
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+                // flex-wrap: wrap;
+                padding: 15px 10px;
 
-.typed__cursor{
-    display: inline-block;
-    margin-left: 3px;
-    width: 4px;
-    color: rgba(251, 0, 0, 0.801);
-    text-shadow: 1px 1px 6px rgba(251, 0, 0, 0.486);
-    animation: cursorBlink 1s infinite;
-}
-
-span.typing {
-    animation: none;
-}
-
-@keyframes cursorBlink {
-    49% { background-color: transparent; }
-    50% { background-color: transparent; }
-    99% { background-color: transparent; }
-}
-
-</style>
-
-<script>
-import { setTimeout } from 'timers';
-
-export default {
-    name: 'PxPreciosHeader',
-        data: () => {
-            return {
-                typeValue: '',
-                typeStatus: false,
-                typeArray: ['Paginas Web', 'Landings Page', 'Portafolios', 'Sitios Interactivos'],
-                typingSpeed: 150,
-                erasingSpeed: 100,
-                newTextDelay: 2000,
-                typeArrayIndex: 0,
-                charIndex: 0
+                &:nth-last-child(1n) hr {
+                        margin: 0 auto 10px auto;
+                        width: 70%
+                }
             }
-        },
 
-        methods: {
-        typeText() {
-            if(this.charIndex < this.typeArray[this.typeArrayIndex].length) {
-                if(!this.typeStatus)
-                    this.typeStatus = true;
-
-                this.typeValue += this.typeArray[this.typeArrayIndex].charAt(this.charIndex);
-                this.charIndex += 1;
-                setTimeout(this.typeText, this.typingSpeed);
-            }
-            else {
-                this.typeStatus = false;
-                setTimeout(this.eraseText, this.newTextDelay);
-            }
-        },
-
-        eraseText() {
-                if(this.charIndex > 0) {
-                    if(!this.typeStatus)
-                        this.typeStatus = true;
-
-                this.typeValue = this.typeArray[this.typeArrayIndex].substring(0, this.charIndex - 1);
-                this.charIndex -= 1;
-                setTimeout(this.eraseText, this.erasingSpeed);
-            }
-            else {
-                this.typeStatus = false;
-                this.typeArrayIndex += 1;
-
-                if(this.typeArrayIndex >= this.typeArray.length)
-                    this.typeArrayIndex = 0;
-
-                setTimeout(this.typeText, this.typingSpeed + 1000);
+            & .featuresPrice {
+                color: rgba(137, 43, 226, 0.774);
+                font-size: 1.5rem;
             }
         }
-    },
-
-    created() {
-        setTimeout(this.typeText, this.newTextDelay + 200);
     }
 }
-</script>
+</style>

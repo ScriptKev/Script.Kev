@@ -30,7 +30,7 @@
 
                 <div class="scriptKev__stack">
                     <a
-                        href="#"
+                        :href="i.link"
                         class="stackLogo"
                         v-for="i in stackLogos"
                         :key="i.name"
@@ -111,6 +111,7 @@
 
                 & p {
                     padding: 0 20px;
+                    font-weight: 500;
                 }
             }
 
@@ -145,21 +146,21 @@ export default {
     data () {
         return {
             stackLogos: [
-                { name: 'Adobe XD', logo: require('@/static/stackLogos/Adobe-XD.svg') },
-                { name: 'Figma', logo: require('@/static/stackLogos/Figma.jpg') },
-                { name: 'Framer', logo: require('@/static/stackLogos/Framer.svg') },
-                { name: 'HTML', logo: require('@/static/stackLogos/HTML.svg') },
-                { name: 'CSS', logo: require('@/static/stackLogos/CSS.svg') },
-                { name: 'JavaScript', logo: require('@/static/stackLogos/JavaScript.svg') },
-                { name: 'Sass', logo: require('@/static/stackLogos/Sass.png') },
-                { name: 'GitHub', logo: require('@/static/stackLogos/GitHub.svg') },
-                { name: 'PWA', logo: require('@/static/stackLogos/PWA.png') },
-                { name: 'Wordpress', logo: require('@/static/stackLogos/Wordpress.svg') },
-                { name: 'NPM', logo: require('@/static/stackLogos/NPM.svg') },
-                { name: 'Vue', logo: require('@/static/stackLogos/Vue.png') },
-                { name: 'Vuetify', logo: require('@/static/stackLogos/Vuetify.png') },
-                { name: 'Vercel', logo: require('@/static/stackLogos/Vercel.svg') },
-                { name: 'Firebase', logo: require('@/static/stackLogos/Firebase.svg') },
+                { name: 'Adobe XD', logo: require('@/static/stackLogos/Adobe-XD.svg'), link: 'https://www.adobe.com/es/products/xd' },
+                { name: 'Figma', logo: require('@/static/stackLogos/Figma.jpg'), link: 'https://www.figma.com' },
+                { name: 'Framer', logo: require('@/static/stackLogos/Framer.svg'), link: 'https://www.framer.com' },
+                { name: 'HTML', logo: require('@/static/stackLogos/HTML.svg'), link: 'https://www.developer.mozilla.org/es/docs/Web/HTML' },
+                { name: 'CSS', logo: require('@/static/stackLogos/CSS.svg'), link: 'https://www.developer.mozilla.org/es/docs/Web/CSS' },
+                { name: 'JavaScript', logo: require('@/static/stackLogos/JavaScript.svg'), link: 'https://www.developer.mozilla.org/es/docs/Web/JavaScript' },
+                { name: 'Sass', logo: require('@/static/stackLogos/Sass.png'), link: 'https://www.sass-lang.com' },
+                { name: 'GitHub', logo: require('@/static/stackLogos/GitHub.png'), link: 'https://www.github.com' },
+                { name: 'PWA', logo: require('@/static/stackLogos/PWA.png'), link: 'https://www.developer.mozilla.org/es/docs/Web/Progressive_web_apps' },
+                { name: 'Wordpress', logo: require('@/static/stackLogos/Wordpress.svg'), link: 'https://es.wordpress.com/' },
+                { name: 'NPM', logo: require('@/static/stackLogos/NPM.svg'), link: 'https://www.npmjs.com' },
+                { name: 'Vue', logo: require('@/static/stackLogos/Vue.png'), link: 'https://www.vuejs.org' },
+                { name: 'Vuetify', logo: require('@/static/stackLogos/Vuetify.png'), link: 'https://www.vuetifyjs.com' },
+                { name: 'Vercel', logo: require('@/static/stackLogos/Vercel.svg'), link: 'https://www.vercel.com' },
+                { name: 'Firebase', logo: require('@/static/stackLogos/Firebase.svg'), link: 'https://www.firebase.google.com' },
             ],
         }
     }

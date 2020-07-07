@@ -11,7 +11,7 @@
 .Precios {
     height: auto;
     max-width: 1440px;
-    margin: auto;
+    margin: 0 auto;
 }
 </style>
 

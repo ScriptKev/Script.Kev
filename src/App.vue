@@ -1,6 +1,7 @@
 <template>
-    <div class="App">
-        <!-- <transition name="fade" appear>
+    <v-app>
+
+        <transition name="fade" appear>
             <div class="modal-overlay" v-if="showModal" @click="showModal = false"></div>
         </transition>
 
@@ -15,48 +16,58 @@
                     cerrar
                 </button>
             </div>
-        </transition> -->
+        </transition>
 
         <px-nav />
-        <router-view />
+        <transition name="fade" mode="out-in">
+            <router-view />
+        </transition>
         <px-footer />
-    </div>
+    </v-app>
 </template>
 
-<style lang="scss" src="./assets/scss/main.scss"></style>
 <style lang="scss" scoped>
 
+// .fade-enter-active,
+// .fade-leave-active {
+//   transition-duration: 0.5s;
+//   transition-property: opacity;
+//   transition-timing-function: ease;
+// }
+
+// .fade-enter,
+// .fade-leave-active {
+//   opacity: 0
+// }
+
 .App {
- position: relative;
- 
- 
-//  width: 100vw;
-//  min-height: 100vh;
-//  overflow-x: hidden;
+    position: relative;
 }
 
 .button {
- appearance: none;
- outline: none;
- border: none;
- background: none;
- cursor: pointer;
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
  
- display: inline-block;
- background-image: linear-gradient(to right, #CC2E5D, #FF5858);
- border-radius: 8px;
- 
- color: #FFF;
- font-size: 18px;
- font-weight: 700;
- 
- box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
- transition: 0.4s ease-out;
- 
- 
- &:hover {
-  box-shadow: 6px 6px rgba(0, 0, 0, 0.6);
- }
+    display: inline-block;
+    background-image: linear-gradient(to right, #CC2E5D, #FF5858);
+    border-radius: 8px;
+    
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+    transition: 0.4s ease-out;
+    
+    
+    &:hover {
+        box-shadow: 6px 6px rgba(0, 0, 0, 0.6);
+    }
 }
 
 .modal-overlay {

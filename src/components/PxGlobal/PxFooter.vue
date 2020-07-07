@@ -16,7 +16,7 @@
 @import '../../assets/scss/main';
 
 .footer {
-    margin-top: 40px;
+    margin-top: 80px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -28,15 +28,18 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        font-weight: 500;
 
         & a {
             margin: 0px 10px;
             font-size: 1.4rem;
+            color: rgba(17,17,17,.63);
         }
     }
 
     &__copyright {
         text-align: center;
+        font-weight: 500;
     }
 }
 

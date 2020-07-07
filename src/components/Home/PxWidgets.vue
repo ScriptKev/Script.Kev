@@ -16,9 +16,9 @@
             </div>
         </article>
 
-        <article class="widget__secondary">
+        <!-- <article class="widget__secondary">
             <div class="widget__secondary--title">
-                <h3>Facturacion</h3>
+                <h3>Optimizacion</h3>
             </div>
 
             <div class="widget__secondary--description">
@@ -26,7 +26,7 @@
                     Variedad de presupuestos accesibles y tentadores.
                 </p>
             </div>
-        </article>
+        </article> -->
 
         <article class="widget__tertiary">
             <div class="widget__tertiary--title">
@@ -48,14 +48,18 @@
 .widgets{
     display: grid;
     padding: 0 30px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 150px;
-    grid-template-areas:    "primary secondary tertiary";
+    grid-template-areas:    "primary tertiary";
     column-gap: 50px;
     align-items: center;
     max-width: 1440px;
     justify-items: center;
     margin: auto;
+
+    p {
+        font-weight: 500;
+    }
 
         & .widget__primary {
             grid-area: primary;
