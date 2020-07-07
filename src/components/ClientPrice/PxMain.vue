@@ -10,6 +10,22 @@
             <v-switch style="display:inline-block; margin-top: 10px;" :typeClientComp="typeClientComp"  v-model="typeClient" inset></v-switch>
         </div>
 
+        <v-alert
+            class="alert__prospectDataSending"
+            width="100%"
+            close-text="Close Alert"
+            prominent
+            outlined
+            dismissible
+            text
+            origin="bottom center"
+            transition="scale-transition"
+            v-if="dataSending.status"
+            type="success"
+        >
+            Proyecto Enviado con <strong>Exito!</strong>
+        </v-alert>
+
         <section class="mainPrice__clientData">
             <px-client-form-business v-if="typeClient === true"/>
             <px-client-form-single v-else />
@@ -22,7 +38,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import '../../assets/scss/main';
+// @import '../../assets/scss/main';
 
 
 .mainPrice {
@@ -31,9 +47,10 @@
     margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 60px 100px 1fr;
+    grid-template-rows: 60px 100px 1fr min-content;
     grid-template-areas:    "title title"
                             "clientType clientType"
+                            "alert alert"
                             "clientForm clientResults";
     width: 70vw;
 
@@ -60,11 +77,16 @@
     &__clientResults{
         grid-area: clientResults;
     }
+
+    & .alert__prospectDataSending {
+        grid-area: alert;
+    }
 }
 
 </style>
 
 <script>
+import { mapState } from 'vuex';
 import PxClientFormBusiness from './PxClientFormBusiness';
 import PxClientFormSingle from './PxClientFormSingle';
 import PxClientResults from './PxClientResults';
@@ -81,6 +103,8 @@ export default {
     },
 
     computed: {
+        ...mapState(['dataSending']),
+
         typeClientComp () {
             return this.typeClient ? this.clientComp = 'Empresa' : this.clientComp = 'Individuo'
         },

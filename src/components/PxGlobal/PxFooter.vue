@@ -1,7 +1,7 @@
 <template>
     <footer id="footer" class="footer">
         <section class="footer__contactMe">
-            <a :href="social.link" v-for="social in socialContact" :key="social.name">
+            <a :href="social.link" v-for="social in socialContact" :key="social.name" target="_blank" rel="noopener noreferrer">
                 {{ social.name }}
             </a>
         </section>

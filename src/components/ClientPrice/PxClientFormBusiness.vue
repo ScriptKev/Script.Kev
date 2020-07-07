@@ -70,7 +70,7 @@
             required
         ></v-checkbox>
 
-        <v-btn :disabled="!valid" color="success" class="mr-4" @click="validate">
+        <v-btn :disabled="!valid" color="success" class="mr-4" @click.prevent="sumbitProspectDataForm">
             Enviar
         </v-btn>
 
@@ -90,7 +90,8 @@
 </style>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState } from 'vuex';
+import {db} from '@/main.js';
 
 export default {
     name: 'PxClientFormSingle',
@@ -134,13 +135,42 @@ export default {
     }),
 
     computed: {
-        ...mapState(['clientDomain']),
+        ...mapState(['clientDomain', 'dataSending']),
     },
 
     methods: {
-        validate () {
-            this.$refs.form.validate()
+        async sumbitProspectDataForm () {
+            try {
+                this.$refs.form.validate()
+
+                await db.collection('prospectsData').add({
+                    Fullname: this.Fullname,
+                    Email: this.email,
+                    Domain: this.clientDomain.name,
+                    DomainExt: this.clientDomain.ext,
+                    DomainWebType: this.clientDomain.webType,
+                    DescriptionWeb: this.description
+                })
+
+                this.$refs.form.reset()
+                this.Fullname = '';
+                this.email = '';
+                this.clientDomain.name = '';
+                this.clientDomain.ext = '';
+                this.clientDomain.webType = '';
+                this.description = '';
+                this.dataSending.status = true;
+
+                setTimeout(() =>  this.dataSending.status = false, 5000);
+
+            } catch (error) {
+                console.error(error)
+            }
         },
+
+        // validate () {
+        //     this.$refs.form.validate()
+        // },
         reset () {
             this.$refs.form.reset()
         },

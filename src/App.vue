@@ -1,6 +1,5 @@
 <template>
     <v-app>
-
         <transition name="fade" appear>
             <div class="modal-overlay" v-if="showModal" @click="showModal = false"></div>
         </transition>
@@ -143,9 +142,9 @@ export default {
             showModal: false
         }
     },
- 
+
     created() {
-        this.showModal = true   
+        this.showModal = true;
     }
 }
 </script>

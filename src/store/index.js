@@ -10,7 +10,9 @@ export default new Vuex.Store({
             ext: '',
             businessName: '',
             webType: '',
-        }
+        },
+
+        dataSending: { status: false}
     },
     actions: {
     },
