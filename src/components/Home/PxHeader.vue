@@ -138,6 +138,29 @@
     }
 
 }
+
+// MediaQueries
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+    .header {
+        height: auto;
+
+        &__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:    "scriptkev"
+                                "description";
+
+            & .scriptKev {
+
+                &__title{
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+}
+
+
 </style>
 
 <script>

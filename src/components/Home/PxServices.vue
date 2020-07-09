@@ -127,7 +127,18 @@
     }
 
     &__two {
-        @extend .mainServices__two;
+        display: grid;
+        margin: 50px 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content;
+        grid-template-areas:    "description"
+                                "icon";
+        height: auto;
+        max-width: 1440px;
+        justify-items: center;
+        align-items: center;
+        height: 300px;
+        border-radius: 10px 0 0 10px;
 
         & .shadow{
             filter: drop-shadow(1px 1px 10px rgba(51, 51, 51, 0.507));
@@ -231,7 +242,127 @@
 
 }
 
-// scroll Animation
+// Media Queries
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .mainServices {
+
+        &__one {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:    "description"
+                                    "icon";
+            height: auto;
+            height: min-content;
+            border-radius: 10px 0 0 10px;
+
+            &--description {
+                clip-path: none;
+                margin: 0;
+                text-align: center;
+
+                & h3 {
+                    padding: 0;
+                }
+
+                & p {
+                    padding: 0;
+                }
+            }
+
+            &--icon {
+                clip-path: none;
+                margin: 15px auto auto auto;
+                border-radius: 10px;
+                width: 90%;
+            }
+        }
+
+        &__two {
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:    "description"
+                                    "icon";
+            height: auto;
+            height: min-content;
+            border-radius: 10px 0 0 10px;
+
+            & .shadow{
+                filter: none;
+                height: 100%;
+                width: 100%;
+                margin: auto;
+                border-radius: 10px 0 0 10px;
+            }
+
+            &--description {
+                clip-path: none;
+                margin: 40px 0 0 0;
+                text-align: center;
+
+                & h3 {
+                    padding: 0;
+                }
+
+                & p {
+                    padding: 0;
+                }
+            }
+
+            &--icon {
+                clip-path: none;
+                margin: 15px auto auto auto;
+                width: 90%;
+                border-radius: 10px;
+            }
+        }
+
+        &__three {
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:    "icon"
+                                    "description";
+            height: auto;   
+            height: min-content;
+            border-radius: 10px 0 0 10px;
+
+            & .shadow{
+                filter: none;
+                height: 100%;
+                width: 100%;
+                margin: auto;
+                border-radius: 10px 0 0 10px;
+            }
+
+            &--description {
+                clip-path: none;
+                margin: auto;
+                text-align: center;
+                padding: 0 10px;
+
+                & h3 {
+                    padding: 0;
+                }
+
+                & p {
+                    padding: 0;
+                }
+            }
+
+            &--icon {
+                clip-path: none;
+                margin: 15px auto auto auto;
+                width: 90%;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
 </style>
 
 <script>

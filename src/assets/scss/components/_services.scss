@@ -11,8 +11,3 @@
     height: 300px;
     border-radius: 10px 0 0 10px;
 }
-
-.mainServices__two {
-    @extend .mainServices__one;
-    grid-template-areas:    "icon description";
-}

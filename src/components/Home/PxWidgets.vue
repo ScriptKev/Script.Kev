@@ -91,6 +91,20 @@
 
         }
 }
+
+// Media Queries
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .widgets {
+        // padding: 0 30px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 200px;
+        grid-template-areas:    "primary"
+                                "tertiary";
+        row-gap: 50px;
+    }
+}
+
 </style>
 
 <script>

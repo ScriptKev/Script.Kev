@@ -21,7 +21,7 @@
         <transition name="fade" mode="out-in">
             <router-view />
         </transition>
-        <px-footer />
+        <!-- <px-footer /> -->
     </v-app>
 </template>
 
