@@ -21,23 +21,23 @@
         <transition name="fade" mode="out-in">
             <router-view />
         </transition>
-        <!-- <px-footer /> -->
+        <px-footer />
     </v-app>
 </template>
 
 <style lang="scss" scoped>
 
-// .fade-enter-active,
-// .fade-leave-active {
-//   transition-duration: 0.5s;
-//   transition-property: opacity;
-//   transition-timing-function: ease;
-// }
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.5s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
 
-// .fade-enter,
-// .fade-leave-active {
-//   opacity: 0
-// }
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
+}
 
 .App {
     position: relative;
