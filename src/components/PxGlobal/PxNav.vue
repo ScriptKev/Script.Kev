@@ -49,6 +49,19 @@
         }
     }
 }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .nav {
+        height: min-content;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:    "logo"
+                                "links";
+        justify-items: center;
+        align-items: center;
+    }
+}
 </style>
 
 <script>

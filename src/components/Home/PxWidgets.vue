@@ -55,7 +55,7 @@
     align-items: center;
     max-width: 1440px;
     justify-items: center;
-    margin: auto;
+    margin-top: 120px;
 
     p {
         font-weight: 500;

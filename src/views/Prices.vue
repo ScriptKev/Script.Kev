@@ -1,6 +1,6 @@
 <template>
     <div class="Precios">
-        <px-header />
+        <!-- <px-header /> -->
         <px-main />
     </div>
 </template>

@@ -100,6 +100,29 @@ span.typing {
     99% { background-color: transparent; }
 }
 
+// Media Queries
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .headerPortfolio {
+
+        &__grid {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:    "presentacion"
+                                    "img";
+
+            & .headerPortfolio__presentation {
+                grid-area: presentacion;
+                padding: 0 10px;
+        }
+        }
+
+        &__img--container {
+            background-size: contain;
+        }
+    }
+}
+
 </style>
 
 <script>

@@ -83,6 +83,30 @@
     }
 }
 
+// Media Queries
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .mainPrice {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 100px 1fr min-content min-content;
+        grid-template-areas:    "title"
+                                "clientType"
+                                "alert"
+                                " clientForm"
+                                "clientResults";
+        width: 100%;
+        row-gap: 50px;
+
+        &__clientData {
+        }
+
+        &__clientResults {
+
+        }
+    }
+}
+
 </style>
 
 <script>

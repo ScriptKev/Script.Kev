@@ -64,7 +64,7 @@
         text-align: center;
         border-radius: 10px;
         height: auto;
-        width: 40%;
+        width: 500px;
         margin: auto;
         background-color: rgba(134, 134, 134, 0.1);
         box-shadow: 10px 10px 6px 5px rgba(0, 0, 0, 0.28);
@@ -93,4 +93,15 @@
         }
     }
 }
+
+// Media Querie
+
+// @media only screen (min-width: 320px) and (max-width: 767px) {
+//     .cardPrices {
+
+//         &__standar {
+
+//         }
+//     }
+// }
 </style>

@@ -31,14 +31,15 @@
     height: auto;
     width: 100%;
     margin-top: 50px;
+    padding: 0 30px;
 
     &__title {
         text-align: center;
     }
 
     &__projects {
-        padding: 0 50px;
         max-width: 1440px;
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
@@ -86,6 +87,35 @@
             text-shadow: 1px 1px 10px black;
             box-shadow: 1px 1px 10px rgba(26, 26, 26, 0.349);
 
+        }
+    }
+}
+
+// Media Queries
+
+@media only screen and (min-width: 320px) and (max-width: 880px) {
+    .mainPortfolio {
+
+        &__projects {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media only screen and (min-width: 881px) and (max-width: 1340px) {
+    .mainPortfolio {
+
+        &__projects {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media only screen and (min-width: 1341px) {
+    .mainPortfolio {
+
+        &__projects {
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
 }
