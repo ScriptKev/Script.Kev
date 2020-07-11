@@ -96,7 +96,7 @@
                                 " clientForm"
                                 "clientResults";
         width: 100%;
-        row-gap: 50px;
+        row-gap: 0px;
 
         &__clientData {
         }

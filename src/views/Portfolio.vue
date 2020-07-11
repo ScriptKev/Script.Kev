@@ -1,6 +1,6 @@
 <template>
     <div class="Portfolio">
-        <px-header />
+        <!-- <px-header /> -->
         <px-main />
     </div>
 </template>
@@ -12,6 +12,7 @@
     height: auto;
     max-width: 1440px;
     margin: auto;
+    width: 100%;
 }
 </style>
 

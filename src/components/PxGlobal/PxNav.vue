@@ -28,7 +28,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 40px;
+    padding: 0 50px;
     max-width: 1440px;
     margin: auto;
 
@@ -60,6 +60,7 @@
                                 "links";
         justify-items: center;
         align-items: center;
+        padding: 0 30px;
     }
 }
 </style>

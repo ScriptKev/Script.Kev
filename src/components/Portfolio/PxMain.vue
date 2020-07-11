@@ -51,14 +51,10 @@
     & .project {
         width: 400px;
         height: 350px;
-            position: relative;
+        position: relative;
 
         &__img {
             height: 250px;
-            // background-image: url('../../static/iconProjects/lcpSnapshot.png');
-            // background-repeat: no-repeat;
-            // background-position: center;
-            // background-size: cover;
             transition: 1s ease-out;
 
             & img {
@@ -95,9 +91,28 @@
 
 @media only screen and (min-width: 320px) and (max-width: 880px) {
     .mainPortfolio {
+        padding: 0;
 
         &__projects {
-            grid-template-columns: 1fr;
+            grid-template-columns: 100%;
+
+            & .project {
+                width: 320px;
+                margin: auto;
+                position: relative;
+
+                &__img {
+                    width: 100%;
+                    transition: 1s ease-out;
+
+                    & img {
+                        border-radius: 10px;
+                        width: 100%;
+                        height: inherit;
+                        box-shadow: 1px 1px 15px rgba(26, 26, 26, 0.527);
+                    }
+                }
+            }
         }
     }
 }

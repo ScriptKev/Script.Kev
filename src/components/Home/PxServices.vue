@@ -37,7 +37,7 @@
     &__itemsContainer {
         margin-top: 50px;
         display: grid;
-        grid-template-columns: repeat(auto-fill, 330px);
+        grid-template-columns: repeat(auto-fill, 320px);
         grid-template-rows: min-content;
         justify-content: center;
         align-items: center;
@@ -45,11 +45,10 @@
         column-gap: 50px;
 
         & .mainServices__item {
-            // box-shadow: 5px 5px 15px rgba(51, 51, 51, 0.575);
-            // border-radius: 10px;
+            width: 100%;
             text-align: center;
             height: 400px;
-            
+
             &--title {
                 font-size: 1.3rem;
                 padding: 0 10px;
@@ -62,8 +61,9 @@
             }
 
             &--img {
-                width: 100%;
+                width: 95%;
                 border-radius: 10px;
+                margin: auto;
 
                 img {
                     border-radius: 10px;
