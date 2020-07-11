@@ -1,6 +1,6 @@
 <template>
     <div class="Portfolio">
-        <!-- <px-header /> -->
+        <px-header />
         <px-main />
     </div>
 </template>
