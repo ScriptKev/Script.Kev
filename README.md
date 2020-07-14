@@ -1,19 +1,12 @@
-# v2
+![header](https://github.com/sneyderdev/sneyderdev/blob/master/profile-header.jpg?raw=true)
 
-## Project setup
-```
-npm install
-```
+- Hi! my name is Kevin Blanco, i'm a Frontend Developer from Venezuela, and passionate about technology creating amazing things in the modern web.
+- I work on Figma, Framer, HTML, CSS, Sass, JS 💛, Vuejs 💚, Reactjs 💙 and Firebase like BaaS. ✌
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+----
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Contact Me
+- **[Email](mailto:script.kev@gmail.com)**
+- **[Website](https://scriptkev.ml)**
+- **[Twitter](https://twitter.com/ScriptKev)**
+- **[LinkedIn](https://linkedin.com/in/scriptkev)**
