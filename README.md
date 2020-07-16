@@ -2,10 +2,10 @@
 
 <p align="center">
 	<strong align="center"> Contact Me </strong> <br>
-  <a href="https://scriptkev.ml">🌐 My WebSite</a> |
-  <a href="https://twitter.com/intent/follow?screen_name=ScriptKev&tw_p=followbutton">💙 Twitter</a> |
-  <a href="mailto:script.kev@gmail.com">✉ Email</a> |
-  <a href="https://linkedin.com/in/scriptkev">💼 Linkedin</a>
+  <a href="https://scriptkev.ml" target="_blank" rel="noopener noreferrer">🌐 My WebSite</a> |
+  <a href="https://twitter.com/intent/follow?screen_name=ScriptKev&tw_p=followbutton" target="_blank" rel="noopener noreferrer">💙 Twitter</a> |
+  <a href="mailto:script.kev@gmail.com" target="_blank" rel="noopener noreferrer">✉ Email</a> |
+  <a href="https://linkedin.com/in/scriptkev" target="_blank" rel="noopener noreferrer">💼 Linkedin</a>
 </p>
 
 ----
