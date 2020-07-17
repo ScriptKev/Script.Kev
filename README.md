@@ -1,6 +1,6 @@
 ![header](https://github.com/ScriptKev/ScriptKev/blob/master/src/assets/toGitHub/bannerGitHub.png?raw=true)
 
-<h3 align="center"> Contact Me </h3>
+<h2 align="left"> Contact Me </h2>
 <!-- <p align="center">
 	<a href="https://twitter.com/ScriptKev">
 	  <img align="center" alt="ScriptKev Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />
