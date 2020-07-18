@@ -56,6 +56,8 @@
     max-width: 1440px;
     justify-items: center;
     margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
 
     p {
         font-weight: 500;
