@@ -28,6 +28,8 @@
     max-width: 1440px;
     padding: 0 30px;
     margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
 
     &__title {
         font-size: 1.5rem;
