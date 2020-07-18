@@ -1,26 +1,9 @@
 ![header](https://github.com/ScriptKev/ScriptKev/blob/master/src/assets/toGitHub/bannerGitHub.png?raw=true)
 
 <h2 align="left"> Contact Me </h2>
-<!-- <p align="center">
-	<a href="https://twitter.com/ScriptKev">
-	  <img align="center" alt="ScriptKev Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />
-	</a>
-	<a href="https://www.linkedin.com/in/ScriptKev">
-	  <img align="center" alt="ScriptKev Linkdein" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />
-	</a>
-	<a href="https://github.com/ScriptKev">
-	  <img align="center" alt="ScriptKev Github" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" />
-	</a>
-	<a href="https://instagram.com/ScriptKev">
-	  <img align="center" alt="ScriptKev Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />
-	</a>
-	<a href="https://www.kaggle.com/ajaykhalsa">
-	  <img align="center" alt="Ajay's Kaggle" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/kaggle.svg" />
-	</a>
-</p> -->
 
 [![Twitter Badge](https://img.shields.io/badge/-@ScriptKev-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/ScriptKev)](https://twitter.com/ScriptKev) [![Linkedin Badge](https://img.shields.io/badge/-ScriptKev-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/ScriptKev/)](https://www.linkedin.com/in/ScriptKev/) [![Instagram Badge](https://img.shields.io/badge/-@ScriptKev-da2b75?style=flat-square&labelColor=white&logo=Instagram&link=https://instagram.com/ScriptKev/)](https://instagram.com/ScriptKev/)
-[![Gmail Badge](https://img.shields.io/badge/-script.kev@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:Script.Kev@gmail.com)](mailto:kraghav123@gmail.com)
+[![Gmail Badge](https://img.shields.io/badge/-script.kev@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:Script.Kev@gmail.com)](mailto:Script.Kev@gmail.com)
 
 
 ----
