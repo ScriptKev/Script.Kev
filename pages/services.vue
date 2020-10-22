@@ -17,11 +17,6 @@
         </article>
       </div>
     </section>
-
-    <!-- <section class="formServices">
-      <PxServicesForm />
-      <PxServicesInfo />
-    </section> -->
   </div>
 </template>
 

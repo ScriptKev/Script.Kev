@@ -65,13 +65,13 @@
 <script>
 export default {
   name: 'secondaryDescriptionAbout',
-  data: () => ({
-    iconsTech: [
-      { title: 'Expressjs', img: require('~/assets/icons/Expressjs.png'), sizeWidth: '100px', sizeHeight: '30px' },
-      { title: 'Flutter', img: require('~/assets/icons/flutter.png'), sizeWidth: '50px', sizeHeight: '65px' },
-      { title: 'Flutter', img: require('~/assets/icons/ionic.png'), sizeWidth: '50px', sizeHeight: '20px' },
-      { title: 'Flutter', img: require('~/assets/icons/nodejs.png'), sizeWidth: '50px', sizeHeight: '30px' },
-    ]
-  })
+  // data: () => ({
+  //   iconsTech: [
+  //     { title: 'Expressjs', img: require('~/assets/icons/Expressjs.png'), sizeWidth: '100px', sizeHeight: '30px' },
+  //     { title: 'Flutter', img: require('~/assets/icons/flutter.png'), sizeWidth: '50px', sizeHeight: '65px' },
+  //     { title: 'Flutter', img: require('~/assets/icons/ionic.png'), sizeWidth: '50px', sizeHeight: '20px' },
+  //     { title: 'Flutter', img: require('~/assets/icons/nodejs.png'), sizeWidth: '50px', sizeHeight: '30px' },
+  //   ]
+  // })
 }
 </script>
