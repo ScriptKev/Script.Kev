@@ -1,5 +1,5 @@
 <template>
-  <div class="">global comp</div>
+  <div>global comp</div>
 </template>
 
 <script>
