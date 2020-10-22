@@ -1,0 +1,31 @@
+.project {
+  width: 310px;
+  margin: 20px;
+  height: 240px;
+  border-radius: 35px;
+  background: #edecec;
+  box-shadow: -4px -4px 15px rgba(255, 255, 255, 1), 4px 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 400ms;
+
+  &:hover {
+    color: rgba(29, 29, 29, 0.932)
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 760px) {
+  .project {
+    width: 280px;
+    margin: 20px;
+    height: 240px;
+    border-radius: 35px;
+    background: #edecec;
+    box-shadow: -4px -4px 15px rgba(255, 255, 255, 1), 4px 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 400ms;
+  }
+}

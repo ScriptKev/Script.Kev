@@ -1,0 +1,86 @@
+.myStack {
+
+  &__title {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+
+    h3 {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.stack {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  column-gap: 3px;
+  margin: auto;
+  width: 750px;
+  height: 85px;
+  padding: 10px;
+  border-radius: 20px;
+  background: #edecec;
+  box-shadow: -4px -4px 15px rgba(255, 255, 255, 1), 4px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 400ms;
+
+  &__item {
+    text-align: center;
+    height: min-content;
+
+    &--title {
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  &:hover {
+    color: rgba(29, 29, 29, 0.932)
+  }
+}
+
+.icon {
+  transition: all ease-in-out 400ms;
+
+  &:hover {
+    transform: scale(1.1)
+  }
+}
+
+@media only screen and (min-width: 817px) and (max-width: 923px) {
+  .stack {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 145px;
+    width: 750px;
+
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 816px) {
+  .stack {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 305px;
+    width: 500px;
+
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 555px) {
+  .stack {
+    width: 280px;
+    margin: auto;
+    padding: 10px;
+  }
+}
+
