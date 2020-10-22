@@ -1,5 +1,6 @@
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
+  mode: 'universal',
   head: {
     title: 'portfolio-nuxt',
     meta: [
@@ -39,6 +40,8 @@ export default {
     '@nuxt/content',
   ],
 
+  loading: { color: '#fff' },
+
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
 
@@ -47,5 +50,9 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-  }
+    /*
+     ** You can extend webpack config here
+     */
+    extend(config, ctx) {},
+  },
 }
