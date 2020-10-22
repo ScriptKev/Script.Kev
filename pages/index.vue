@@ -33,7 +33,6 @@ export default {
   a {
     margin-right: 1rem;
     color: red;
-
   }
 }
 
