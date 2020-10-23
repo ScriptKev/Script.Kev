@@ -26,8 +26,8 @@
 ```javascript
 const ScriptKev = {
   pronouns: "he" | "him",
-  languages: [ Javascript, HTML5, CSS3 ],
-  technologies: [ Figma, Framer, Sass, Vue, Vuex, Vue-Router, React, Firebase ],
+  languages: [ HTML5, CSS3, Javascript ],
+  technologies: [ Figma, Sass, Vue, Nuxt, React, Next, Firebase ],
 }
 ```
 ----
