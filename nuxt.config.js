@@ -27,7 +27,6 @@ export default {
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
-    '@nuxtjs/pwa',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -40,7 +39,7 @@ export default {
     '@nuxt/content',
   ],
 
-  loading: { color: '#fff' },
+  loading: { color: '#0082FF' },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
