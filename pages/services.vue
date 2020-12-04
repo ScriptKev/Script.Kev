@@ -123,6 +123,12 @@ export default {
         }
       ]
     }
-  }
+  },
+
+  created () {
+    if (process.client) {
+      window.scrollTo(0, 0);
+    }
+  },
 };
 </script>

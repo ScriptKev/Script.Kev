@@ -40,12 +40,20 @@ export default {
   data: () => ({
     projects: [
       {
-        url: 'https://manage-vue.vercel.app/',
-        title: 'Manage Vue',
+        url: 'https://tequegi.ml/',
+        title: 'TequeGi',
+        description: 'Tienda virtual hecha en Nextjs',
+        stack: [ 'Nextjs', 'Emotion' ],
+        img: require('~/assets/projectsImg/tequegi.png'),
+        repository: 'https://github.com/ScriptKev/tequegi-ccs',
+      },
+      {
+        url: 'https://blog-wiki-project.vercel.app/',
+        title: 'Blog Project University',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis augue non nisi dictum pretium.',
-        stack: [ 'Vue', 'Vuetify', 'Sass' ],
-        img: require('~/assets/projectsImg/manage-vue.png'),
-        repository: 'https://github.com/ScriptKev/ManageVue',
+        stack: [ 'Nextjs', 'Emotion' ],
+        img: require('~/assets/projectsImg/blog-wiki-project.png'),
+        repository: 'https://github.com/ScriptKev/blog-wiki-project'
       },
       {
         url: 'https://github.com/ScriptKev/platzi-badges-hooks',
@@ -55,14 +63,14 @@ export default {
         repository: 'https://github.com/ScriptKev/platzi-badges-hooks',
         img: require('~/assets/projectsImg/platzi-badge-hooks.png'),
       },
-      // {
-      //   url: '/#',
-      //   title: 'AquaLux',
-      //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis augue non nisi dictum pretium.',
-      //   stack: [ 'Vue', 'Vuetify', 'Sass' ],
-      //   img: require('~/assets/projectsImg/platzi-badge-hooks.png'),
-      //   repository: 'https://github.com/ScriptKev/'
-      // },
+      {
+        url: 'https://manage-vue.vercel.app/',
+        title: 'Manage Vue',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis augue non nisi dictum pretium.',
+        stack: [ 'Vue', 'Vuetify', 'Sass' ],
+        img: require('~/assets/projectsImg/manage-vue.png'),
+        repository: 'https://github.com/ScriptKev/ManageVue',
+      },
       {
         url: 'https://lcp-test.now.sh/',
         title: 'LCP',
@@ -71,22 +79,6 @@ export default {
         img: require('~/assets/projectsImg/lcp.png'),
         repository: 'https://github.com/ScriptKev/LCP'
       },
-      // {
-      //   url: '/#',
-      //   title: 'Giss App',
-      //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis augue non nisi dictum pretium.',
-      //   stack: [ 'Vue', 'Vuetify', 'Sass' ],
-      //   img: require('~/assets/projectsImg/giss-app.png'),
-      //   repository: 'https://github.com/ScriptKev/'
-      // },
-      // {
-      //   url: '/#',
-      //   title: 'TequeGi',
-      //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis augue non nisi dictum pretium.',
-      //   stack: [ 'Vue', 'Vuetify', 'Sass' ],
-      //   img: require('~/assets/projectsImg/platzi-badge-hooks.png'),
-      //   repository: 'https://github.com/ScriptKev/'
-      // },
     ]
   }),
 
@@ -101,6 +93,12 @@ export default {
         }
       ]
     }
-  }
+  },
+
+  created () {
+    if (process.client) {
+      window.scrollTo(0, 0);
+    }
+  },
 }
 </script>

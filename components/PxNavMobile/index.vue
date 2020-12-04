@@ -43,9 +43,10 @@
   display: flex;
   position: sticky;
   z-index: 1000;
-  background-color: white;
+  background-color: #edecec;
   justify-content: center;
   font-weight: bold;
+  box-shadow: 0px -1px 20px 0px #8a8a8a;
 
   &__container {
     width: 100%;
