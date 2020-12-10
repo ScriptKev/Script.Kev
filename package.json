@@ -15,7 +15,7 @@
     "@nuxtjs/pwa": "^3.0.2",
     "@nuxtjs/vercel-builder": "^0.17.12",
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.6"
+    "nuxt": "^2.14.11"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.1.0",
