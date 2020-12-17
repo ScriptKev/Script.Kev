@@ -40,6 +40,14 @@ export default {
   data: () => ({
     projects: [
       {
+        url: 'https://lcpcaracas.org',
+        title: 'La Casa de mi Padre',
+        description: 'Iglesia cristana - La Casa de mi Padre',
+        stack: [ 'Vue', 'Vuetify', 'Sass' ],
+        img: require('~/assets/projectsImg/lcp.png'),
+        repository: 'https://github.com/ScriptKev/LCP'
+      },
+      {
         url: 'https://tequegi.ml/',
         title: 'TequeGi',
         description: 'Tienda virtual hecha en Nextjs',
@@ -70,14 +78,6 @@ export default {
         stack: [ 'Vue', 'Vuetify', 'Sass' ],
         img: require('~/assets/projectsImg/manage-vue.png'),
         repository: 'https://github.com/ScriptKev/ManageVue',
-      },
-      {
-        url: 'https://lcp-test.now.sh/',
-        title: 'LCP',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis augue non nisi dictum pretium.',
-        stack: [ 'Vue', 'Vuetify', 'Sass' ],
-        img: require('~/assets/projectsImg/lcp.png'),
-        repository: 'https://github.com/ScriptKev/LCP'
       },
     ]
   }),
