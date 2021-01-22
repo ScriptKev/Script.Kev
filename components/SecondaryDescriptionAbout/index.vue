@@ -52,6 +52,10 @@
       font-weight: 600;
       color: #474747e0;
     }
+
+    & p > a {
+      font-size: 15px;
+    }
   }
 }
 
