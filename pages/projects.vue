@@ -56,7 +56,7 @@ export default {
         repository: 'https://github.com/ScriptKev/tequegi-ccs',
       },
       {
-        url: 'https://blog-wiki-project.vercel.app/',
+        url: 'https://techgroup.ga/',
         title: 'Blog Project University',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis augue non nisi dictum pretium.',
         stack: [ 'Nextjs', 'Emotion' ],
