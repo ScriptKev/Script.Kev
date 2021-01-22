@@ -1,6 +1,6 @@
 <template>
   <div class="stack__item">
-    <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">
+    <a href="https://nuxtjs.org/" target="_blank" rel="noopener noreferrer">
       <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 400 400">
         <g fill-rule="nonzero" transform="translate(0 50)" fill="none">
           <path d="M227.92099 83.45116l-13.6889 24.10141-46.8148-82.44693L23.7037 278.17052h97.3037c0 13.31084 10.61252 24.10142 23.70371 24.10142H23.70371c-8.46771 0-16.29145-4.59601-20.5246-12.05272-4.23315-7.4567-4.23272-16.64312.00114-24.0994L146.89383 13.05492c4.23415-7.45738 12.0596-12.05138 20.5284-12.05138 8.46878 0 16.29423 4.594 20.52839 12.05138l39.97037 70.39623z" fill="#00C58E"/>
