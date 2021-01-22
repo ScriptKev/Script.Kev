@@ -25,7 +25,7 @@
   grid-area: secondaryDescription;
   align-self: flex-start;
   width: 100%;
-  height: 145px;
+  height: min-content;
   display: flex;
   border-radius: 35px;
   background: #edecec;
