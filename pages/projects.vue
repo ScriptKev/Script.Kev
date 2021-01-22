@@ -56,6 +56,14 @@ export default {
         repository: 'https://github.com/ScriptKev/tequegi-ccs',
       },
       {
+        url: 'https://rick-and-morty-indol.vercel.app/',
+        title: 'Rick And morty',
+        description: 'Pagina de rick and morty',
+        stack: [ 'React', 'Styled Components', 'Typescript', 'Graphql' ],
+        img: require('~/assets/projectsImg/rick-and-morty.png'),
+        repository: 'https://github.com/ScriptKev/rick-and-morty',
+      },
+      {
         url: 'https://techgroup.ga/',
         title: 'Blog Project University',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis augue non nisi dictum pretium.',
