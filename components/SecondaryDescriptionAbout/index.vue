@@ -11,6 +11,11 @@
           :height="icon.sizeHeight"> -->
 
           <p>Nodejs, Express, Ionic y Flutter.</p>
+       <h4>Mas info</h4>
+          <p>
+            script.kev@gmail.com <br/>
+            <a href='https://github.com/ScriptKev/' target='_blank'>https://github.com/ScriptKev/</a>
+          </p>
     </div>
   </section>
 </template>
