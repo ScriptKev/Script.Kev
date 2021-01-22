@@ -1,6 +1,6 @@
 <template>
   <div class="stack__item">
-    <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">
+    <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
       <svg
         :height="size"
         viewBox="0 0 148 90"
