@@ -10,7 +10,7 @@
           :width="icon.sizeWidth"
           :height="icon.sizeHeight"> -->
 
-          <p>Nodejs, Express, Ionic y Flutter.</p>
+          <p>Desarrollo backend con Node/Express/Typescript 🔥</p>
        <h4>Mas info</h4>
           <p>
             script.kev@gmail.com <br/>
