@@ -44,7 +44,7 @@ export default {
         title: 'La Casa de mi Padre',
         description: 'Iglesia cristana - La Casa de mi Padre',
         stack: [ 'Vue', 'Vuetify', 'Sass' ],
-        img: require('~/assets/projectsImg/lcp.png'),
+        img: require('~/assets/projectsImg/lcp-web.png'),
         repository: 'https://github.com/ScriptKev/LCP'
       },
       {
