@@ -40,6 +40,14 @@ export default {
   data: () => ({
     projects: [
       {
+        url: 'https://instagram-redesign-sage.vercel.app',
+        title: 'Instagram Redesign',
+        description: 'Rediseño de instagram',
+        stack: [ 'Next', 'Styled Components' ],
+        img: require('~/assets/projectsImg/instagram-redesign.png'),
+        repository: 'https://github.com/ScriptKev/instagram-redesign'
+      },
+      {
         url: 'https://lcpcaracas.org',
         title: 'La Casa de mi Padre',
         description: 'Iglesia cristana - La Casa de mi Padre',
