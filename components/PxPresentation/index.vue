@@ -1,7 +1,7 @@
 <template>
   <section class="presentation">
     <p>
-      Hola, soy Kevin Blanco un Fullstack Developer Junior, apasionado de la tecnologia, y crear cosas increibles en la web.
+      Hola, soy Kevin Blanco un Frontend Developer, apasionado de la tecnologia, y crear cosas increibles en la web.
         <br />
         <br />
       "No se trata de saberlo todo, sino de Nunca para de Aprender 🚀"
